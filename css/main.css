@@ -1,0 +1,299 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* END OF CSS RESET */
+html {
+  height: 100%; }
+  html body {
+    font-family: 'Hind Madurai', sans-serif;
+    height: 100%; }
+
+button {
+  font-weight: 700;
+  border-radius: 25px; }
+  button:hover {
+    background-color: green !important;
+    color: #fefefa !important; }
+
+a:hover {
+  color: #669966 !important;
+  font-weight: 700; }
+
+h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  color: #383838;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8rem;
+  font-weight: 700;
+  font-family: 'Akaya Telivigala'; }
+
+.line {
+  border-bottom: 0.3rem solid #669966;
+  width: 20rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto; }
+
+header .menu {
+  background-color: #fefefa;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr; }
+  header .menu__left {
+    display: inline-flex;
+    justify-content: flex-start; }
+    header .menu__left__li {
+      display: inline;
+      font-size: 1.4rem;
+      padding-right: 1em;
+      margin-top: auto;
+      margin-bottom: auto; }
+      header .menu__left__li__name {
+        font-family: 'Gloria Hallelujah', cursive; }
+      header .menu__left__li a {
+        text-decoration: none;
+        color: #383838; }
+  header .menu__right {
+    display: inline-flex;
+    justify-content: flex-end; }
+    header .menu__right__logo {
+      font-size: 2.5rem;
+      color: #669966;
+      padding-right: 3rem;
+      margin-top: auto;
+      margin-bottom: auto; }
+    header .menu__right__order {
+      font-size: 1rem;
+      background-color: #ffed42;
+      color: #383838;
+      border-radius: 10%;
+      padding: 1rem;
+      border: #669966 1px solid; }
+header .hero {
+  position: relative; }
+  header .hero__picBox__img {
+    width: 100%;
+    height: 90vh; }
+  header .hero__textBox {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 3.5rem;
+    color: #fefefa; }
+    header .hero__textBox__title {
+      font-family: 'Gloria Hallelujah', cursive; }
+    header .hero__textBox__button {
+      font-size: 1.5rem;
+      background-color: #ffed42;
+      color: #383838;
+      padding: 1rem;
+      border: #669966 1px solid; }
+
+main .actions__component {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px; }
+  main .actions__component__card {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto; }
+    main .actions__component__card__picBox {
+      height: 100%; }
+      main .actions__component__card__picBox__img {
+        object-fit: cover;
+        width: 100%;
+        height: 40rem;
+        border-radius: 20px; }
+    main .actions__component__card__opacity {
+      position: absolute;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      height: 40rem;
+      border-radius: 20px; }
+    main .actions__component__card__textBox {
+      position: absolute;
+      top: 40%;
+      width: 100%; }
+      main .actions__component__card__textBox__h3 {
+        text-align: center;
+        font-weight: 700;
+        font-family: 'Akaya Telivigala';
+        font-size: 2.5rem;
+        color: #fefefa;
+        text-shadow: 2px 2px 1px #969696;
+        padding-bottom: 2rem; }
+      main .actions__component__card__textBox__button {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        font-size: 1rem;
+        background-color: #ffed42;
+        color: #383838;
+        padding: 1rem 2rem;
+        border: #669966 1px solid; }
+main .menu {
+  height: auto; }
+  main .menu__component {
+    height: auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px; }
+    main .menu__component__card {
+      position: relative;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      height: 370px;
+      border-radius: 20px;
+      -webkit-box-shadow: 1px 4px 19px 3px rgba(0, 0, 0, 0.25);
+      box-shadow: 1px 4px 19px 3px rgba(0, 0, 0, 0.25); }
+      main .menu__component__card__img {
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        object-fit: cover;
+        width: 100%;
+        height: 60%; }
+      main .menu__component__card__textBox {
+        color: #383838;
+        padding-bottom: 2rem;
+        height: 40%;
+        text-align: center; }
+        main .menu__component__card__textBox__h4 {
+          font-weight: 700;
+          font-family: 'Akaya Telivigala';
+          font-size: 1.5rem;
+          padding-top: 15px;
+          padding-bottom: 5px; }
+        main .menu__component__card__textBox__p {
+          padding-bottom: 20px; }
+        main .menu__component__card__textBox__button {
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          font-size: .8rem;
+          background-color: #ffed42;
+          color: #383838;
+          padding: .5rem 1rem;
+          border: #669966 1px solid; }
+
+footer {
+  width: 100%;
+  background-color: #669966;
+  height: auto;
+  margin-top: 10rem;
+  color: #fefefa; }
+  footer .footerMenu {
+    width: 80%;
+    height: auto;
+    padding-top: 3rem;
+    margin-left: auto !important;
+    margin-right: auto !important; }
+    footer .footerMenu__footerCol {
+      display: inline-block;
+      width: 33%;
+      height: auto; }
+      footer .footerMenu__footerCol__li {
+        text-align: center;
+        height: auto; }
+        footer .footerMenu__footerCol__li__title {
+          font-weight: 500;
+          font-family: 'Akaya Telivigala';
+          font-size: 1.9rem;
+          padding-top: 15px;
+          padding-bottom: 5px; }
+        footer .footerMenu__footerCol__li a {
+          text-decoration: none;
+          color: #fefefa;
+          font-size: 1.5rem; }
+  footer .socialMenu {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; }
+    footer .socialMenu__left {
+      display: inline-flex;
+      justify-content: flex-start; }
+      footer .socialMenu__left__li {
+        display: inline;
+        font-size: 1.4rem;
+        padding-right: 1em;
+        margin-top: auto;
+        margin-bottom: auto; }
+        footer .socialMenu__left__li a {
+          text-decoration: none;
+          color: #fefefa; }
+    footer .socialMenu__right {
+      display: inline-flex;
+      justify-content: flex-end; }
+      footer .socialMenu__right__logo {
+        font-size: 2.5rem;
+        color: #fefefa;
+        padding-right: 3rem;
+        margin-top: auto;
+        margin-bottom: auto; }
+  footer p {
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #fefefa; }
+
+/*# sourceMappingURL=main.css.map */
