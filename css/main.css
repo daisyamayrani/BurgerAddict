@@ -47,6 +47,8 @@ html {
   html body {
     font-family: 'Hind Madurai', sans-serif;
     height: 100%; }
+    html body p {
+      font-size: 12px; }
 
 button {
   font-weight: 700;
@@ -66,45 +68,46 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   margin-top: 8rem;
+  margin-bottom: 3rem;
   font-weight: 700;
-  font-family: 'Akaya Telivigala'; }
+  font-family: 'Akaya Telivigala';
+  border-bottom: 100% solid #669966;
+  padding-bottom: .5rem;
+  padding-top: 1rem; }
 
 .line {
   border-bottom: 0.3rem solid #669966;
-  width: 20rem;
+  max-width: 20rem;
   margin-bottom: 2rem;
-  margin-top: 1rem;
-  margin-left: auto;
-  margin-right: auto; }
+  margin-top: 1rem; }
 
 header .menu {
   background-color: #fefefa;
   padding-top: 1.3rem;
   padding-bottom: 1.3rem;
-  padding-right: 3rem;
-  padding-left: 3rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr; }
-  header .menu__left {
-    display: inline-flex;
-    justify-content: flex-start; }
-    header .menu__left__li {
-      display: inline;
-      font-size: 1.4rem;
-      padding-right: 1em;
-      margin-top: auto;
-      margin-bottom: auto; }
-      header .menu__left__li__name {
-        font-family: 'Gloria Hallelujah', cursive; }
-      header .menu__left__li a {
-        text-decoration: none;
-        color: #383838; }
+  padding-right: 1rem;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
+  header .menu__left__li {
+    display: inline;
+    font-size: 1.4rem;
+    padding-right: 1em;
+    margin-top: auto;
+    margin-bottom: auto; }
+    header .menu__left__li__name {
+      font-family: 'Gloria Hallelujah', cursive; }
+    header .menu__left__li a {
+      text-decoration: none;
+      color: #383838; }
   header .menu__right {
-    display: inline-flex;
-    justify-content: flex-end; }
+    display: flex;
+    align-items: center; }
     header .menu__right__logo {
-      font-size: 2.5rem;
+      font-size: 2.7rem;
       color: #669966;
       padding-right: 3rem;
       margin-top: auto;
@@ -119,30 +122,38 @@ header .menu {
 header .hero {
   position: relative; }
   header .hero__picBox__img {
+    object-fit: cover;
+    object-position: bottom;
     width: 100%;
     height: 90vh; }
-  header .hero__textBox {
+  header .hero__picBox__textBox {
     position: absolute;
     top: 30%;
     left: 10%;
     font-size: 3.5rem;
     color: #fefefa; }
-    header .hero__textBox__title {
-      font-family: 'Gloria Hallelujah', cursive; }
-    header .hero__textBox__button {
+    header .hero__picBox__textBox__title {
+      font-size: 4.3rem;
+      font-family: 'Gloria Hallelujah', cursive;
+      text-shadow: 1px 1px 2px #969696; }
+    header .hero__picBox__textBox__text {
+      font-size: 3.5rem;
+      text-shadow: 1px 1px 2px #969696; }
+    header .hero__picBox__textBox__button {
       font-size: 1.5rem;
       background-color: #ffed42;
       color: #383838;
       padding: 1rem;
-      border: #669966 1px solid; }
+      border: #669966 1.5px solid; }
 
 main .actions__component {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px; }
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  margin: auto; }
   main .actions__component__card {
     position: relative;
     width: 100%;
@@ -154,18 +165,18 @@ main .actions__component {
       main .actions__component__card__picBox__img {
         object-fit: cover;
         width: 100%;
-        height: 40rem;
+        height: 30rem;
         border-radius: 20px; }
     main .actions__component__card__opacity {
       position: absolute;
       top: 0;
       background-color: rgba(0, 0, 0, 0.5);
       width: 100%;
-      height: 40rem;
+      height: 30rem;
       border-radius: 20px; }
     main .actions__component__card__textBox {
       position: absolute;
-      top: 40%;
+      top: 30%;
       width: 100%; }
       main .actions__component__card__textBox__h3 {
         text-align: center;
@@ -192,7 +203,7 @@ main .menu {
     margin-left: auto;
     margin-right: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px; }
     main .menu__component__card {
       position: relative;
@@ -239,8 +250,11 @@ footer {
   margin-top: 10rem;
   color: #fefefa; }
   footer .footerMenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
     width: 80%;
-    height: auto;
     padding-top: 3rem;
     margin-left: auto !important;
     margin-right: auto !important; }
@@ -252,48 +266,120 @@ footer {
         text-align: center;
         height: auto; }
         footer .footerMenu__footerCol__li__title {
-          font-weight: 500;
-          font-family: 'Akaya Telivigala';
-          font-size: 1.9rem;
+          font-weight: 600;
+          font-style: italic;
+          font-size: 1.5rem;
           padding-top: 15px;
           padding-bottom: 5px; }
         footer .footerMenu__footerCol__li a {
           text-decoration: none;
           color: #fefefa;
-          font-size: 1.5rem; }
+          font-size: 1.2rem; }
   footer .socialMenu {
-    width: 80%;
-    height: auto;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 3rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr; }
-    footer .socialMenu__left {
-      display: inline-flex;
-      justify-content: flex-start; }
-      footer .socialMenu__left__li {
-        display: inline;
-        font-size: 1.4rem;
-        padding-right: 1em;
-        margin-top: auto;
-        margin-bottom: auto; }
-        footer .socialMenu__left__li a {
-          text-decoration: none;
-          color: #fefefa; }
-    footer .socialMenu__right {
-      display: inline-flex;
-      justify-content: flex-end; }
-      footer .socialMenu__right__logo {
-        font-size: 2.5rem;
-        color: #fefefa;
-        padding-right: 3rem;
-        margin-top: auto;
-        margin-bottom: auto; }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    footer .socialMenu__left__li {
+      display: inline;
+      font-size: 1rem;
+      padding-right: 1em;
+      margin-top: auto;
+      margin-bottom: auto;
+      line-height: 3.5; }
+      footer .socialMenu__left__li a {
+        text-decoration: none;
+        color: #fefefa; }
+    footer .socialMenu__right__logo {
+      font-size: 2.5rem;
+      color: #fefefa;
+      padding-right: 3rem;
+      margin-top: auto;
+      margin-bottom: auto; }
   footer p {
     text-align: center;
     padding-bottom: 2rem;
     color: #fefefa; }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  header .menu {
+    background-color: #fefefa;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; }
+    header .menu__left__li {
+      font-size: 1rem;
+      text-align: center;
+      padding-right: 0rem;
+      margin-top: auto;
+      margin-bottom: auto; }
+      header .menu__left__li__name {
+        font-family: 'Gloria Hallelujah', cursive;
+        padding-bottom: 30px; }
+      header .menu__left__li__link {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 10px; }
+      header .menu__left__li a {
+        text-decoration: none;
+        color: #383838; }
+    header .menu__right {
+      display: flex;
+      align-items: center; }
+      header .menu__right__logo {
+        display: none; }
+      header .menu__right__order {
+        font-size: 1rem;
+        background-color: #ffed42;
+        color: #383838;
+        border-radius: 10%;
+        padding: 1rem;
+        border: #669966 1px solid; }
+  header .hero {
+    position: relative; }
+    header .hero__picBox {
+      max-width: 100%;
+      height: auto; }
+      header .hero__picBox__img {
+        object-fit: cover;
+        object-position: bottom;
+        height: 500px; }
+      header .hero__picBox__textBox {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        color: #fefefa;
+        text-align: center; }
+        header .hero__picBox__textBox__title {
+          font-size: 3rem;
+          font-family: 'Gloria Hallelujah', cursive;
+          text-shadow: 1px 1px 2px #969696; }
+        header .hero__picBox__textBox__text {
+          font-size: 2rem;
+          text-shadow: 1px 1px 2px #969696; }
+        header .hero__picBox__textBox__button {
+          font-size: 1rem;
+          background-color: #ffed42;
+          color: #383838;
+          padding: 1rem;
+          border: #669966 1.5px solid; } }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 
 /*# sourceMappingURL=main.css.map */
