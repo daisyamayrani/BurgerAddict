@@ -287,7 +287,7 @@ footer {
     footer .socialMenu__left__li {
       display: inline;
       font-size: 1rem;
-      padding-right: 1em;
+      padding-right: .7rem;
       margin-top: auto;
       margin-bottom: auto;
       line-height: 3.5; }
@@ -376,7 +376,78 @@ footer {
           background-color: #ffed42;
           color: #383838;
           padding: 1rem;
-          border: #669966 1.5px solid; } }
+          border: #669966 1.5px solid; }
+
+  footer {
+    width: 100%;
+    background-color: #669966;
+    height: auto;
+    margin-top: 10rem;
+    color: #fefefa; }
+    footer .footerMenu {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding-top: 3rem;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      line-height: 1.5; }
+      footer .footerMenu__footerCol {
+        display: inline-block;
+        width: 100%;
+        height: auto; }
+        footer .footerMenu__footerCol__li {
+          text-align: center;
+          height: auto; }
+          footer .footerMenu__footerCol__li__title {
+            font-weight: 600;
+            font-style: italic;
+            font-size: 1.5rem;
+            padding-top: 15px;
+            padding-bottom: 5px; }
+          footer .footerMenu__footerCol__li a {
+            text-decoration: none;
+            color: #fefefa;
+            font-size: 1.2rem; }
+    footer .socialMenu {
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 3rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
+      footer .socialMenu__left__li {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1rem;
+        padding-right: .7rem;
+        margin-top: auto;
+        margin-bottom: auto;
+        line-height: 3.5;
+        text-align: center; }
+        footer .socialMenu__left__li a {
+          text-decoration: none;
+          color: #fefefa;
+          text-align: center; }
+      footer .socialMenu__right {
+        margin-top: 30px; }
+        footer .socialMenu__right__logo {
+          font-size: 2.5rem;
+          color: #fefefa;
+          padding-right: .3rem;
+          padding-left: .3rem;
+          margin-top: auto;
+          margin-bottom: auto; }
+    footer p {
+      text-align: center;
+      padding-bottom: 2rem;
+      color: #fefefa; } }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */

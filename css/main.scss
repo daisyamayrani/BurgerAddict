@@ -362,7 +362,7 @@ footer {
       &__li {
         display: inline;
         font-size: 1rem;
-        padding-right: 1em;
+        padding-right: .7rem;
         margin-top: auto;
         margin-bottom: auto;
 				line-height: 3.5;
@@ -412,7 +412,6 @@ footer {
 	        font-size: 1rem;
 					text-align: center;
 	        padding-right: 0rem;
-
 	        margin-top: auto;
 	        margin-bottom: auto;
 	        &__name {
@@ -438,11 +437,6 @@ footer {
 				display: flex;
 				align-items: center;
 	      &__logo {
-	        // font-size: 2.7rem;
-	        // color: $green;
-	        // padding-right: 3rem;
-	        // margin-top: auto;
-	        // margin-bottom: auto;
 					display: none;
 	      }
 	      &__order {
@@ -493,10 +487,98 @@ footer {
 	  }
 	}
 
+	footer {
+		width: 100%;
+		background-color: $green;
+		height: auto;
+		margin-top: 10rem;
+		color: $offWhite;
+		.footerMenu {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			padding-top: 3rem;
+			margin-left: auto !important;
+			margin-right: auto !important;
+			line-height: 1.5;
+			&__footerCol {
+				display: inline-block;
+				width: 100%;
+				height: auto;
+				&__li {
+					text-align: center;
+					height: auto;
+					&__title {
+						font-weight: 600;
+						font-style: italic;
+						font-size: 1.5rem;
+						padding-top: 15px;
+						padding-bottom: 5px;
+					}
+					a {
+						text-decoration: none;
+						color: $offWhite;
+						font-size: 1.2rem;
+					}
+				}
+			}
+		}
+		.socialMenu {
+			margin-left: auto;
+			margin-right: auto;
+			padding-bottom: 3rem;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+	    &__left{
+	      &__li {
+	        display: block;
+					margin-left: auto;
+					margin-right: auto;
+					font-size: 1rem;
+					padding-right: .7rem;
+	        margin-top: auto;
+	        margin-bottom: auto;
+					line-height: 3.5;
+					text-align: center;
+	        a {
+	          text-decoration: none;
+	          color: $offWhite;
+						text-align: center;
+
+	        }
+	      }
+	    }
+	    &__right{
+				margin-top: 30px;
+	      &__logo {
+	        font-size: 2.5rem;
+	        color: $offWhite;
+	        padding-right: .3rem;
+					padding-left: .3rem;
+	        margin-top: auto;
+	        margin-bottom: auto;
+	      }
+	    }
+	  }
+		p {
+			text-align: center;
+			padding-bottom: 2rem;
+			color: $offWhite;
+		}
+	}
+
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
 
 }
 
