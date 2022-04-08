@@ -66,7 +66,7 @@ html {
 }
 button {
   font-weight: 700;
-  border-radius: 25px;
+  border-radius: 40px;
   &:hover {
     background-color:green !important;
     color: $offWhite !important;
@@ -148,7 +148,7 @@ header {
         font-size: 1rem;
         background-color: $yellow;
         color: $gray;
-        border-radius: 10%;
+        border-radius: 40px;
         padding: 1rem;
         border: $green 1px solid;
       }
@@ -341,10 +341,15 @@ footer {
 					padding-top: 15px;
 					padding-bottom: 5px;
 				}
-				a {
-					text-decoration: none;
-					color: $offWhite;
-					font-size: 1.2rem;
+				&__link {
+					a {
+						text-decoration: none;
+						color: $offWhite;
+						font-size: 1.2rem;
+						&:hover {
+							color: $yellow !important;
+						}
+					}
 				}
 			}
 		}
@@ -366,10 +371,12 @@ footer {
         margin-top: auto;
         margin-bottom: auto;
 				line-height: 3.5;
-
         a {
           text-decoration: none;
           color: $offWhite;
+					&:hover {
+						color: $yellow !important;
+					}
         }
       }
     }
@@ -380,6 +387,9 @@ footer {
         padding-right: 3rem;
         margin-top: auto;
         margin-bottom: auto;
+				&:hover {
+					color: $yellow !important;
+				}
       }
     }
   }
@@ -555,7 +565,7 @@ footer {
 	      }
 	    }
 	    &__right{
-				margin-top: 30px;
+				padding-top: 30px;
 	      &__logo {
 	        font-size: 2.5rem;
 	        color: $offWhite;
