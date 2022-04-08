@@ -214,12 +214,18 @@ main .menu {
       border-radius: 20px;
       -webkit-box-shadow: 1px 4px 19px 3px rgba(0, 0, 0, 0.25);
       box-shadow: 1px 4px 19px 3px rgba(0, 0, 0, 0.25); }
-      main .menu__component__card__pic__img {
+      main .menu__component__card__pic {
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
         object-fit: cover;
         width: 100%;
         height: 60%; }
+        main .menu__component__card__pic__img {
+          border-top-right-radius: 20px;
+          border-top-left-radius: 20px;
+          object-fit: cover;
+          width: 100%;
+          height: 60%; }
       main .menu__component__card__textBox {
         color: #383838;
         padding-bottom: 2rem;
