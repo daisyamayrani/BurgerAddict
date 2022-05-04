@@ -87,7 +87,6 @@ h2 {
 	margin-top: 8rem;
 	margin-bottom: 3rem;
 	font-weight: 700;
-	font-family: 'Akaya Telivigala';
 	border-bottom: 100% solid $green;
 	// max-width: 20%;
 	padding-bottom: .5rem;
@@ -140,7 +139,7 @@ header {
       &__logo {
         font-size: 2.7rem;
         color: $green;
-        padding-right: 3rem;
+        padding-left: 3rem;
         margin-top: auto;
         margin-bottom: auto;
       }
@@ -193,6 +192,9 @@ header {
 
 main {
 	.actions {
+		h2 {
+			font-family: 'Akaya Telivigala';
+		}
 		&__component{
 			width: 80%;
 			margin-left: auto;
@@ -255,6 +257,9 @@ main {
 
 	.menu {
 		height: auto;
+		h2 {
+			font-family: 'Akaya Telivigala';
+		}
 		&__component{
 			height: auto;
 			width: 80%;
@@ -367,7 +372,7 @@ footer {
 		margin-right: auto;
 		padding-bottom: 3rem;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
@@ -454,16 +459,17 @@ footer {
 	    &__right{
 				display: flex;
 				align-items: center;
-	      &__logo {
-					display: none;
-	      }
 	      &__order {
 	        font-size: 1rem;
 	        background-color: $yellow;
 	        color: $gray;
+					padding: 1rem;
 	        border-radius: 10%;
-	        padding: 1rem;
 	        border: $green 1px solid;
+	      }
+				&__logo {
+					display: none;
+					padding: 1rem;
 	      }
 	    }
 	  }
