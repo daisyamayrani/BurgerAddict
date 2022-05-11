@@ -118,7 +118,7 @@ header .menu {
       border-radius: 40px;
       padding: 1rem;
       border: #669966 1px solid; }
-header .hero {
+header .hero__picBox {
   position: relative; }
   header .hero__picBox__img {
     object-fit: cover;

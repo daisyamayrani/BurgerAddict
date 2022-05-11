@@ -154,8 +154,9 @@ header {
     }
   }
   .hero {
-		position: relative;
+
     &__picBox {
+			position: relative;
       &__img {
 				object-fit: cover;
 				object-position: bottom;
