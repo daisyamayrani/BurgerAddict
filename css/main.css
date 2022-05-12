@@ -181,9 +181,11 @@ main .actions__component {
       width: 100%; }
       main .actions__component__card__textBox__h3 {
         text-align: center;
+        margin-left: 5px;
+        margin-right: 5px;
         font-weight: 700;
         font-family: 'Akaya Telivigala';
-        font-size: 2.5rem;
+        font-size: 2.4rem;
         color: #fefefa;
         text-shadow: 2px 2px 1px #969696;
         padding-bottom: 2rem; }
@@ -264,7 +266,7 @@ footer {
     justify-content: center;
     align-items: flex-start;
     width: 80%;
-    padding-top: 3rem;
+    padding-top: 1rem;
     margin-left: auto !important;
     margin-right: auto !important; }
     footer .footerMenu__footerCol {
@@ -289,7 +291,8 @@ footer {
   footer .socialMenu {
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -317,7 +320,7 @@ footer {
         color: #ffed42 !important; }
   footer p {
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     color: #fefefa; }
 
 /* Extra small devices (phones, 600px and down) */
@@ -407,7 +410,8 @@ footer {
       justify-content: center;
       align-items: center;
       width: 100%;
-      padding-top: 3rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
       margin-left: auto !important;
       margin-right: auto !important;
       line-height: 1.5; }
@@ -431,7 +435,6 @@ footer {
     footer .socialMenu {
       margin-left: auto;
       margin-right: auto;
-      padding-bottom: 3rem;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -464,9 +467,5 @@ footer {
       text-align: center;
       padding-bottom: 2rem;
       color: #fefefa; } }
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* Medium devices (landscape tablets, 768px and up) */
-/* Large devices (laptops/desktops, 992px and up) */
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 
 /*# sourceMappingURL=main.css.map */
