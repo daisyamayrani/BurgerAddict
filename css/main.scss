@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -18,31 +86,50 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
- /* END OF CSS RESET */
+/* END OF CSS RESET */
 
 $offWhite: #fefefa;
 $gray: #383838;
@@ -55,8 +142,9 @@ $yellow: #ffed42;
 
 html {
 	height: 100%;
+
 	body {
-	  font-family: 'Hind Madurai', sans-serif;
+		font-family: 'Hind Madurai', sans-serif;
 		height: 100%;
 
 		p {
@@ -64,20 +152,24 @@ html {
 		}
 	}
 }
+
 button {
-  font-weight: 700;
-  border-radius: 40px;
-  &:hover {
-    background-color:green !important;
-    color: $offWhite !important;
-    }
+	font-weight: 700;
+	border-radius: 40px;
+
+	&:hover {
+		background-color: green !important;
+		color: $offWhite !important;
+	}
 }
+
 a {
-  &:hover {
-    color: $green !important;
-    font-weight: 700;
-  }
+	&:hover {
+		color: $green !important;
+		font-weight: 700;
+	}
 }
+
 h2 {
 	font-size: 3.5rem;
 	text-align: center;
@@ -92,6 +184,7 @@ h2 {
 	padding-bottom: .5rem;
 	padding-top: 1rem;
 }
+
 .line {
 	border-bottom: .3rem solid $green;
 	max-width: 20rem;
@@ -106,88 +199,100 @@ h2 {
 
 
 header {
-  .menu{
-    background-color: $offWhite;
-    padding-top: 1.3rem;
-    padding-bottom: 1.3rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
+	.menu {
+		background-color: $offWhite;
+		padding-top: 1.3rem;
+		padding-bottom: 1.3rem;
+		padding-right: 1rem;
+		padding-left: 1rem;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-around;
 		align-items: center;
-    &__left{
-      &__li {
-        display: inline;
-        font-size: 1.4rem;
-        padding-right: 1em;
-        margin-top: auto;
-        margin-bottom: auto;
-        &__name {
-          font-family: 'Gloria Hallelujah', cursive;
-        }
-        a {
-          text-decoration: none;
-          color: $gray;
-        }
-      }
-    }
-    &__right{
+
+		&__left {
+			&__li {
+				display: inline;
+				font-size: 1.4rem;
+				padding-right: 1em;
+				margin-top: auto;
+				margin-bottom: auto;
+
+				&__name {
+					font-family: 'Gloria Hallelujah', cursive;
+				}
+
+				a {
+					text-decoration: none;
+					color: $gray;
+				}
+			}
+		}
+
+		&__right {
 			display: flex;
 			align-items: center;
-      &__logo {
-        font-size: 2.7rem;
-        color: $green;
-        padding-left: 3rem;
-        margin-top: auto;
-        margin-bottom: auto;
-      }
-      &__order {
-        font-size: 1rem;
-        background-color: $yellow;
-        color: $gray;
-        border-radius: 40px;
-        padding: 1rem;
-        border: $green 1px solid;
-      }
-    }
-  }
-  .hero {
 
-    &__picBox {
+			&__logo {
+				font-size: 2.7rem;
+				color: $green;
+				padding-left: 3rem;
+				margin-top: auto;
+				margin-bottom: auto;
+			}
+
+			&__order {
+				font-size: 1rem;
+				background-color: $yellow;
+				color: $gray;
+				border-radius: 40px;
+				padding: 1rem;
+				border: $green 1px solid;
+			}
+		}
+	}
+
+	.hero {
+
+		&__picBox {
 			position: relative;
-      &__img {
+
+			&__img {
 				object-fit: cover;
 				object-position: bottom;
 				width: 100%;
-			  height: 90vh;
-      }
-			&__textBox{
-	      position: absolute;
-	      top: 30%;
-	      left: 10%;
-	      font-size: 3.5rem;
-	      color: $offWhite;
-	      &__title {
+				height: 90vh;
+			}
+
+			&__textBox {
+				position: absolute;
+				top: 30%;
+				left: 10%;
+				font-size: 3.5rem;
+				color: $offWhite;
+
+				&__title {
 					font-size: 4.3rem;
-	        font-family: 'Gloria Hallelujah', cursive;
+					font-family: 'Gloria Hallelujah', cursive;
 					text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
-	      }
+				}
+
 				&__text {
 					font-size: 3.5rem;
 					text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
-	      }
-	      &__button {
-	        font-size: 1.5rem;
-	        background-color: $yellow;
-	        color: $gray;
-	        padding: 1rem;
-	        border: $green 1.5px solid;
-	      }
-	    }
-    }
-  }
+				}
+
+				&__button {
+					font-size: 1.5rem;
+					background-color: $yellow;
+					color: $gray;
+					padding: 1rem;
+					border: $green 1.5px solid;
+				}
+			}
+		}
+	}
 }
 
 
@@ -196,43 +301,52 @@ main {
 		h2 {
 			font-family: 'Akaya Telivigala';
 		}
-		&__component{
+
+		&__component {
 			width: 80%;
 			margin-left: auto;
 			margin-right: auto;
 			display: grid;
-			// grid-template-columns: 1fr 1fr 1fr;
-			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-			grid-gap: 20px;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			grid-gap: 60px;
 			margin: auto;
+
 			&__card {
 				position: relative;
-				width:100%;
+				width: 100%;
 				margin-left: auto;
 				margin-right: auto;
 				height: auto;
-		    &__picBox {
+
+				&__picBox {
 					height: 100%;
-		      &__img {
+
+					&__img {
 						object-fit: cover;
-		        width: 100%;
-		        height:30rem;
+						width: 100%;
+						height: 30rem;
 						border-radius: 20px;
-		      }
-		    }
+					}
+				}
+
+				//figure out where opacity goes
 				&__opacity {
 					position: absolute;
-		      top: 0;
+					top: 0;
 					background-color: rgba(0, 0, 0, .5);
 					width: 100%;
-					height:30rem;
+					height: 30rem;
 					border-radius: 20px;
 				}
-		    &__textBox{
-		      position: absolute;
-		      top: 30%;
-					width: 100%;
-		      &__h3 {
+
+				&__textBox {
+					position: absolute;
+					top: 30%;
+					width: 90%;
+					padding-left: 5%;
+					padding-right: 5%;
+
+					&__h3 {
 						text-align: center;
 						margin-left: 5px;
 						margin-right: 5px;
@@ -242,51 +356,56 @@ main {
 						color: $offWhite;
 						text-shadow: 2px 2px 1px rgba(150, 150, 150, 1);
 						padding-bottom: 2rem;
-		      }
-		      &__button {
+					}
+
+					&__button {
 						margin-left: auto;
 						margin-right: auto;
 						display: block;
-		        font-size: 1rem;
-		        background-color: $yellow;
-		        color: $gray;
-		        padding: 1rem 2rem;
-		        border: $green 1px solid;
-		      }
-		    }
+						font-size: 1rem;
+						background-color: $yellow;
+						color: $gray;
+						padding: 1rem 2rem;
+						border: $green 1px solid;
+					}
+				}
 			}
 		}
 	}
 
 	.menu {
 		height: auto;
+
 		h2 {
 			font-family: 'Akaya Telivigala';
 		}
-		&__component{
+
+		&__component {
 			height: auto;
 			width: 80%;
 			margin-left: auto;
 			margin-right: auto;
 			display: grid;
-			// grid-template-columns: 1fr 1fr 1fr;
-			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-			grid-gap: 20px;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			grid-gap: 50px;
+
 			&__card {
 				position: relative;
-				width:100%;
+				width: 100%;
 				margin-left: auto;
 				margin-right: auto;
 				height: 370px;
 				border-radius: 20px;
-				-webkit-box-shadow: 1px 4px 19px 3px rgba(0,0,0,0.25);
-				box-shadow: 1px 4px 19px 3px rgba(0,0,0,0.25);
+				-webkit-box-shadow: 1px 4px 19px 3px rgba(0, 0, 0, 0.25);
+				box-shadow: 1px 4px 19px 3px rgba(0, 0, 0, 0.25);
+
 				&__pic {
 					border-top-right-radius: 20px;
 					border-top-left-radius: 20px;
 					object-fit: cover;
 					width: 100%;
 					height: 60%;
+
 					&__img {
 						border-top-right-radius: 20px;
 						border-top-left-radius: 20px;
@@ -296,32 +415,35 @@ main {
 					}
 				}
 
-				&__textBox{
+				&__textBox {
 					color: $gray;
 					padding-bottom: 2rem;
 					height: 40%;
 					text-align: center;
-		      &__h4 {
+
+					&__h4 {
 						font-weight: 700;
 						font-family: 'Akaya Telivigala';
 						font-size: 1.5rem;
 						padding-top: 15px;
 						padding-bottom: 5px;
-		      }
+					}
+
 					&__p {
 						padding-bottom: 20px;
 					}
-		      &__button {
+
+					&__button {
 						margin-left: auto;
 						margin-right: auto;
 						display: block;
-		        font-size: .8rem;
-		        background-color: $yellow;
-		        color: $gray;
-		        padding: .5rem 1rem;
-		        border: $green 1px solid;
-		      }
-		    }
+						font-size: .8rem;
+						background-color: $yellow;
+						color: $gray;
+						padding: .5rem 1rem;
+						border: $green 1px solid;
+					}
+				}
 			}
 		}
 	}
@@ -334,6 +456,7 @@ footer {
 	height: auto;
 	margin-top: 10rem;
 	color: $offWhite;
+
 	.footerMenu {
 		display: flex;
 		flex-wrap: wrap;
@@ -343,13 +466,16 @@ footer {
 		padding-top: 1rem;
 		margin-left: auto !important;
 		margin-right: auto !important;
+
 		&__footerCol {
 			display: inline-block;
 			width: 33%;
 			height: auto;
+
 			&__li {
 				text-align: center;
 				height: auto;
+
 				&__title {
 					font-weight: 600;
 					font-style: italic;
@@ -357,11 +483,13 @@ footer {
 					padding-top: 15px;
 					padding-bottom: 5px;
 				}
+
 				&__link {
 					a {
 						text-decoration: none;
 						color: $offWhite;
 						font-size: 1.2rem;
+
 						&:hover {
 							color: $yellow !important;
 						}
@@ -370,6 +498,7 @@ footer {
 			}
 		}
 	}
+
 	.socialMenu {
 		margin-left: auto;
 		margin-right: auto;
@@ -380,36 +509,42 @@ footer {
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-    &__left{
-      &__li {
-        display: inline;
-        font-size: 1rem;
-        padding-right: .7rem;
-        margin-top: auto;
-        margin-bottom: auto;
+
+		&__left {
+			&__li {
+				display: inline;
+				font-size: 1rem;
+				padding-right: .7rem;
+				margin-top: auto;
+				margin-bottom: auto;
 				line-height: 3.5;
-        a {
-          text-decoration: none;
-          color: $offWhite;
+
+				a {
+					text-decoration: none;
+					color: $offWhite;
+
 					&:hover {
 						color: $yellow !important;
 					}
-        }
-      }
-    }
-    &__right{
-      &__logo {
-        font-size: 2.5rem;
-        color: $offWhite;
-        padding-right: 3rem;
-        margin-top: auto;
-        margin-bottom: auto;
+				}
+			}
+		}
+
+		&__right {
+			&__logo {
+				font-size: 2.5rem;
+				color: $offWhite;
+				padding-right: 3rem;
+				margin-top: auto;
+				margin-bottom: auto;
+
 				&:hover {
 					color: $yellow !important;
 				}
-      }
-    }
-  }
+			}
+		}
+	}
+
 	p {
 		text-align: center;
 		padding-bottom: 1rem;
@@ -421,30 +556,35 @@ footer {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
 	header {
-		.menu{
-	    background-color: $offWhite;
-	    padding-top: 1.3rem;
-	    padding-bottom: 1.3rem;
-	    padding-right: 0rem;
-	    padding-left: 0rem;
+
+		.menu {
+			background-color: $offWhite;
+			padding-top: 1.3rem;
+			padding-bottom: 1.3rem;
+			padding-right: 0rem;
+			padding-left: 0rem;
 			display: flex;
 			flex-direction: column;
 			flex-wrap: wrap;
 			justify-content: space-around;
 			align-items: center;
-	    &__left{
-	      &__li {
-	        // display: inline;
-	        font-size: 1rem;
+
+			&__left {
+				&__li {
+					// display: inline;
+					font-size: 1rem;
 					text-align: center;
-	        padding-right: 0rem;
-	        margin-top: auto;
-	        margin-bottom: auto;
-	        &__name {
-	          font-family: 'Gloria Hallelujah', cursive;
+					padding-right: 0rem;
+					margin-top: auto;
+					margin-bottom: auto;
+
+					&__name {
+						font-family: 'Gloria Hallelujah', cursive;
 						padding-bottom: 30px;
-	        }
+					}
+
 					&__link {
 						display: flex;
 						flex-direction: row;
@@ -453,66 +593,77 @@ footer {
 						align-items: center;
 						padding-bottom: 10px;
 
-	        }
-	        a {
-	          text-decoration: none;
-	          color: $gray;
-	        }
-	      }
-	    }
-	    &__right{
+					}
+
+					a {
+						text-decoration: none;
+						color: $gray;
+					}
+				}
+			}
+
+			&__right {
 				display: flex;
 				align-items: center;
-	      &__order {
-	        font-size: 1rem;
-	        background-color: $yellow;
-	        color: $gray;
+
+				&__order {
+					font-size: 1rem;
+					background-color: $yellow;
+					color: $gray;
 					padding: 1rem;
-	        border-radius: 10%;
-	        border: $green 1px solid;
-	      }
+					border-radius: 10%;
+					border: $green 1px solid;
+				}
+
 				&__logo {
 					display: none;
 					padding: 1rem;
-	      }
-	    }
-	  }
+				}
+			}
+		}
+
 		.hero {
 			position: relative;
-	    &__picBox {
+
+			&__picBox {
 				max-width: 100%;
 				height: auto;
-	      &__img {
+
+				&__img {
 					object-fit: cover;
 					object-position: bottom;
-	        // max-width: 100%;
-				  height: 500px;
-	      }
-				&__textBox{
-		      position: absolute;
-		      top: 30%;
-		      left: 10%;
-		      color: $offWhite;
+					// max-width: 100%;
+					height: 500px;
+				}
+
+				&__textBox {
+					position: absolute;
+					top: 30%;
+					left: 10%;
+					color: $offWhite;
 					text-align: center;
-		      &__title {
+
+					&__title {
 						font-size: 3rem;
-		        font-family: 'Gloria Hallelujah', cursive;
+						font-family: 'Gloria Hallelujah', cursive;
 						text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
-		      }
+					}
+
 					&__text {
 						font-size: 2rem;
 						text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
-		      }
-		      &__button {
-		        font-size: 1rem;
-		        background-color: $yellow;
-		        color: $gray;
-		        padding: 1rem;
-		        border: $green 1.5px solid;
-		      }
-		    }
-	    }
-	  }
+					}
+
+					&__button {
+						font-size: 1rem;
+						background-color: $yellow;
+						color: $gray;
+						padding: 1rem;
+						border: $green 1.5px solid;
+					}
+				}
+			}
+		}
 	}
 
 	footer {
@@ -521,6 +672,7 @@ footer {
 		height: auto;
 		margin-top: 10rem;
 		color: $offWhite;
+
 		.footerMenu {
 			display: flex;
 			flex-direction: column;
@@ -533,13 +685,16 @@ footer {
 			margin-left: auto !important;
 			margin-right: auto !important;
 			line-height: 1.5;
+
 			&__footerCol {
 				display: inline-block;
 				width: 100%;
 				height: auto;
+
 				&__li {
 					text-align: center;
 					height: auto;
+
 					&__title {
 						font-weight: 600;
 						font-style: italic;
@@ -547,6 +702,7 @@ footer {
 						padding-top: 15px;
 						padding-bottom: 5px;
 					}
+
 					a {
 						text-decoration: none;
 						color: $offWhite;
@@ -555,47 +711,51 @@ footer {
 				}
 			}
 		}
+
 		.socialMenu {
 			margin-left: auto;
 			margin-right: auto;
-			// padding-bottom: 2rem;
-			// padding-top: 2rem;
 			display: flex;
 			flex-direction: column;
 			flex-wrap: wrap;
 			justify-content: center;
 			align-items: center;
-	    &__left{
-	      &__li {
-	        display: block;
+
+			&__left {
+				&__li {
+					display: block;
 					margin-left: auto;
 					margin-right: auto;
 					font-size: 1rem;
 					padding-right: .7rem;
-	        margin-top: auto;
-	        margin-bottom: auto;
+					margin-top: auto;
+					margin-bottom: auto;
 					line-height: 3.5;
 					text-align: center;
-	        a {
-	          text-decoration: none;
-	          color: $offWhite;
+
+					a {
+						text-decoration: none;
+						color: $offWhite;
 						text-align: center;
 
-	        }
-	      }
-	    }
-	    &__right{
+					}
+				}
+			}
+
+			&__right {
 				padding-top: 30px;
-	      &__logo {
-	        font-size: 2.5rem;
-	        color: $offWhite;
-	        padding-right: .3rem;
+
+				&__logo {
+					font-size: 2.5rem;
+					color: $offWhite;
+					padding-right: .3rem;
 					padding-left: .3rem;
-	        margin-top: auto;
-	        margin-bottom: auto;
-	      }
-	    }
-	  }
+					margin-top: auto;
+					margin-bottom: auto;
+				}
+			}
+		}
+
 		p {
 			text-align: center;
 			padding-bottom: 2rem;
